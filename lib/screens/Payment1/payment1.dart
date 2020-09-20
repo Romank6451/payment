@@ -49,7 +49,7 @@ class _Payment1State extends State<Payment1> {
               child: Row(
                 children: [
                   IconButton(icon: Icon(Icons.arrow_back,color: Mycolors.black,), onPressed: null),
-                  Text('Packages',style: TextStyle(color: Mycolors.black,fontSize: 16,fontWeight: FontWeight.bold),)
+                  Text('Packages',style: TextStyle(color: Mycolors.black,fontSize: 16,fontFamily: 'Segoe UI-Semibold'),)
                 ],
               ),
             ),
@@ -92,7 +92,7 @@ class _Payment1State extends State<Payment1> {
                       ),
                       child: Column(
                         children: [
-                  Text(status==0?'PLATINUM':"VALUE PACK",style: TextStyle(color: Mycolors.white,fontSize: 15,fontWeight: FontWeight.bold),),
+                  Text(status==0?'PLATINUM':"VALUE PACK",style: TextStyle(color: Mycolors.white,fontSize: 15,fontFamily: 'Segoe UI-Bold'),),
                   SizedBox(height: vert_block*2,),
                   InkWell(
                     onTap: (){
@@ -110,8 +110,8 @@ class _Payment1State extends State<Payment1> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                    Text(!isToggled?'Kes ':'USD ',style: TextStyle(color: Mycolors.black,fontSize: 24),),
-                    Text('$total',style: TextStyle(color: Mycolors.black,fontSize: 24,fontWeight: FontWeight.bold),),
+                    Text(!isToggled?'Kes ':'USD ',style: TextStyle(color: Mycolors.black,fontSize: 24,fontFamily: 'Segoe UI-light'),),
+                    Text('$total',style: TextStyle(color: Mycolors.black,fontSize: 24,fontFamily: 'Segoe UI-Bold'),),
 
                         ],
                       ),
@@ -119,8 +119,8 @@ class _Payment1State extends State<Payment1> {
                   ),
                   SizedBox(height: vert_block*4,),
 
-                  Text(status==0?'Get access to all content on the Viusasa App':"Customize your Viysasa Experience ",style: TextStyle(color: Mycolors.white,fontSize: 10,),),
-                  Text('Select to get an updated amount',style: TextStyle(color: Mycolors.white,fontSize: 10,fontWeight: FontWeight.bold),),
+                  Text(status==0?'Get access to all content on the Viusasa App':"Customize your Viysasa Experience ",style: TextStyle(color: Mycolors.white,fontSize: 10,fontFamily: 'Segoe UI-light'),),
+                  Text('Select to get an updated amount',style: TextStyle(color: Mycolors.white,fontSize: 10,fontFamily: 'Segoe UI-Bold'),),
 
 
                         ],
@@ -147,7 +147,7 @@ class _Payment1State extends State<Payment1> {
                               });
                             },
                           ),
-                          Text("Weekly"),
+                          Text("Weekly",style: TextStyle(color: Mycolors.black,fontSize: 11,fontFamily: 'Segoe UI-Semibold'),),
                           Radio(
                             value: selection,
                             groupValue: 1,
@@ -160,7 +160,7 @@ class _Payment1State extends State<Payment1> {
 
                             },
                           ),
-                          Text("Monthly"),
+                          Text("Monthly",style: TextStyle(color: Mycolors.black,fontSize: 11,fontFamily: 'Segoe UI-Semibold')),
                         ],
                       ),
                       //color: Colors.black,
@@ -216,10 +216,10 @@ class _Payment1State extends State<Payment1> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                     Text('Viusasa Videos unlimited ',style: TextStyle(color: selections[0]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,),),
+                                     Text('Viusasa Videos unlimited ',style: TextStyle(color: selections[0]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Semibold'),),
                   // Text('Kes 60',style: TextStyle(color:selections[0]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold),),
 
-                                    Text(!isToggled?'Kes 60':'USD 60',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold)),
+                                    Text(!isToggled?'Kes 60':'USD 60',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Black')),
 
                                   ],
                                 ),
@@ -232,7 +232,7 @@ class _Payment1State extends State<Payment1> {
                       ),
                     ),
 
-                    SizedBox(height: vert_block*1.5,),
+                    SizedBox(height: vert_block*1,),
 
                     InkWell(
                       onTap: (){
@@ -284,10 +284,10 @@ class _Payment1State extends State<Payment1> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text('Viusasa Videos unlimited ',style: TextStyle(color: selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,),),
+                                    Text('Viusasa Videos unlimited ',style: TextStyle(color: selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Semibold'),),
 
 
-                                    Text(!isToggled?'Kes 40':'USD 40',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold)),
+                                    Text(!isToggled?'Kes 40':'USD 40',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Black')),
                                     // Text('Kes 60',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold),),
 
                                   ],
@@ -301,7 +301,7 @@ class _Payment1State extends State<Payment1> {
                     ),
 
                     
-                    SizedBox(height: vert_block*1.5,),
+                    SizedBox(height: vert_block*1,),
 
                     InkWell(
                       onTap: (){
@@ -353,8 +353,8 @@ class _Payment1State extends State<Payment1> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text('Viusasa Videos unlimited',style: TextStyle(color: selections[2]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,),),
-                                    Text(!isToggled?'Kes 20':'USD 20',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold)),
+                                    Text('Viusasa Videos unlimited',style: TextStyle(color: selections[2]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Semibold'),),
+                                    Text(!isToggled?'Kes 20':'USD 20',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Black')),
 
                                   ],
                                 ),
@@ -366,7 +366,7 @@ class _Payment1State extends State<Payment1> {
                       ),
                     ),
 
-                     SizedBox(height: vert_block*1.5,),
+                     SizedBox(height: vert_block*1,),
 
                     InkWell(
                       onTap: (){
@@ -417,8 +417,8 @@ class _Payment1State extends State<Payment1> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text('Viusasa music unlimited ',style: TextStyle(color: selections[3]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,),),
-                                    Text(!isToggled?'Kes 30':'USD 30',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold)),
+                                    Text('Viusasa music unlimited ',style: TextStyle(color: selections[3]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Semibold'),),
+                                    Text(!isToggled?'Kes 30':'USD 30',style: TextStyle(color:selections[1]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Black')),
 
                                   ],
                                 ),
@@ -431,7 +431,7 @@ class _Payment1State extends State<Payment1> {
                     ),
 
                     
-                    SizedBox(height: vert_block*1.5,),
+                    SizedBox(height: vert_block*1,),
 
                     InkWell(
                       onTap: (){
@@ -483,8 +483,8 @@ class _Payment1State extends State<Payment1> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text('Viusasa News, TV & Radio',style: TextStyle(color: selections[4]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,),),
-                                    Text(status==1?'Free with subscription':"",style: TextStyle(color:selections[1]? Mycolors.black.withOpacity(0.5):Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold),),
+                                    Text('Viusasa News, TV & Radio',style: TextStyle(color: selections[4]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Semibold'),),
+                                    Text(status==1?'Free with subscription':"",style: TextStyle(color:selections[1]? Mycolors.black.withOpacity(0.5):Mycolors.black.withOpacity(0.3),fontSize: 10,fontFamily: 'Segoe UI-Regular'),),
                                   ],
                                 ),
                                 selections[4]?Icon(Icons.check,size: 30,color: Mycolors.green,):Icon(Icons.check,size: 30,color: Mycolors.gray.withOpacity(0.3),)
@@ -495,7 +495,7 @@ class _Payment1State extends State<Payment1> {
                       ),
                     ),
 
-                    SizedBox(height: vert_block*1.5,),
+                    SizedBox(height: vert_block*1,),
 
                     InkWell(
                       onTap: (){
@@ -541,8 +541,8 @@ class _Payment1State extends State<Payment1> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text('Viusasa Deals and Auctions',style: TextStyle(color: selections[5]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,),),
-                                    Text(status==1?'Free with subscription':"",style: TextStyle(color:selections[1]? Mycolors.black.withOpacity(0.5):Mycolors.black.withOpacity(0.3),fontSize: 11,fontWeight: FontWeight.bold),),
+                                    Text('Viusasa Deals and Auctions',style: TextStyle(color: selections[5]? Mycolors.black:Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-Semibold'),),
+                                    Text(status==1?'Free with subscription':"",style: TextStyle(color:selections[1]? Mycolors.black.withOpacity(0.5):Mycolors.black.withOpacity(0.3),fontSize: 11,fontFamily: 'Segoe UI-regular'),),
                                   ],
                                 ),
                                 selections[5]?Icon(Icons.check,size: 30,color: Mycolors.green,):Icon(Icons.check,size: 30,color: Mycolors.gray.withOpacity(0.3),)
@@ -554,14 +554,14 @@ class _Payment1State extends State<Payment1> {
                     ),
 
 
-                    SizedBox(height: 20,),
+                    SizedBox(height: vert_block*2,),
 
                     Container(
 
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("KSH",style: TextStyle(color: !isToggled?Mycolors.black:Mycolors.black.withOpacity(0.3)),),
+                          Text("KSH",style: TextStyle(color: !isToggled?Mycolors.black:Mycolors.black.withOpacity(0.3),fontFamily: !isToggled? 'Segoe UI-Semibold':'Segoe UI-regular'),),
                           SizedBox(width: 10,),
                           Container(
 
@@ -590,7 +590,7 @@ class _Payment1State extends State<Payment1> {
 ),
                           ),
                           SizedBox(width: 10,),
-                          Text("USD",style: TextStyle(color: isToggled?Mycolors.black:Mycolors.black.withOpacity(0.3)),),
+                          Text("USD",style: TextStyle(color: isToggled?Mycolors.black:Mycolors.black.withOpacity(0.3),fontFamily: !isToggled? 'Segoe UI-Semibold':'Segoe UI-regular'),),
 
                           SizedBox(width: 10,),
 
@@ -598,19 +598,19 @@ class _Payment1State extends State<Payment1> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 30,),
+                    SizedBox(height: vert_block*2),
                     Container(
                        decoration: BoxDecoration(
                          color: Mycolors.red,
                          borderRadius: BorderRadius.all(Radius.circular(5)),
                        ),
-                        width: 150,
-                        height: 50,
+                        width: horz_block*40,
+                        height: vert_block*5,
                         child: Center(child: Row(
                           mainAxisAlignment:  MainAxisAlignment.center,
                           children: [
 
-                            Text("Pay",style: TextStyle(color:Mycolors.white),),
+                            Text("Pay",style: TextStyle(color:Mycolors.white,fontSize: 18,fontFamily: 'Segoe UI-regular'),),
                             SizedBox(width: 10,),
                             Icon(Icons.arrow_forward,color: Mycolors.white,),
                           ],
